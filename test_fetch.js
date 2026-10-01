@@ -37,8 +37,15 @@ async function test() {
       runGit(['remote', 'add', 'origin', remoteUrl]);
     }
 
+    console.log('\n--- PULLING REMOTE WITH REBASE ---');
+    runGit(['pull', 'origin', 'main', '--rebase', '--allow-unrelated-histories']);
+
     console.log('\n--- ATTEMPTING GIT PUSH ---');
-    const push = runGit(['push', '-u', 'origin', 'main']);
+    let push = runGit(['push', '-u', 'origin', 'main']);
+    if (push.status !== 0) {
+      console.log('\n--- RETRYING WITH FORCE PUSH ---');
+      push = runGit(['push', '--force', '-u', 'origin', 'main']);
+    }
     console.log('PUSH_EXIT_CODE:', push.status);
 
   } catch (e) {
