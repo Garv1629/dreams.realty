@@ -79,23 +79,25 @@ export default function ContactEnquirySection() {
                 </a>
               </div>
 
-              {/* Office Details Card */}
+              {/* Verified Contact Details Card */}
               <div className="bg-white/70 backdrop-blur-md border border-[#1F3A5F]/10 rounded-[20px] p-6 space-y-4 text-xs text-[#1F3A5F]">
                 <div>
                   <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#4F7399] block mb-1">
-                    Bangalore Office Address
+                    Sales & Support Contact
                   </span>
-                  <p className="font-medium leading-relaxed">
-                    3rd Floor, Above Federal Bank, Ramagondanahalli, Whitefield, Bangalore, Karnataka - 560066
-                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 font-medium">
+                    <a href="tel:+918150041742" className="hover:text-[#4F7399] transition-colors">+91 8150041742</a>
+                    <a href="tel:+918553999922" className="hover:text-[#4F7399] transition-colors">+91 8553999922</a>
+                    <a href="tel:+919663982707" className="hover:text-[#4F7399] transition-colors">+91 9663982707</a>
+                  </div>
                 </div>
                 <div className="pt-3 border-t border-[#1F3A5F]/10 flex flex-col sm:flex-row sm:justify-between gap-3">
                   <div>
                     <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#4F7399] block mb-0.5">
                       Email
                     </span>
-                    <a href="mailto:contact@dreamsrealty.co.in" className="hover:text-[#4F7399] transition-colors font-medium">
-                      contact@dreamsrealty.co.in
+                    <a href="mailto:info@dreamsrealty.co.in" className="hover:text-[#4F7399] transition-colors font-medium">
+                      info@dreamsrealty.co.in
                     </a>
                   </div>
                   <div>

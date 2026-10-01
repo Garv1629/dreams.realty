@@ -32,7 +32,7 @@ export default function TrustSection() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-[#F8F5ED] via-[#EBE5D9]/40 to-[#F8F5ED] relative overflow-hidden">
+    <section id="trust-section" className="py-24 bg-gradient-to-b from-[#F8F5ED] via-[#EBE5D9]/40 to-[#F8F5ED] relative overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 relative z-10">
         
         {/* Section Heading */}

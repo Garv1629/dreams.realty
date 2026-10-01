@@ -15,7 +15,7 @@ export default function FeaturedPropertiesSection() {
   });
 
   return (
-    <section className="py-24 bg-[#F8F5ED] relative">
+    <section id="featured-section" className="py-24 bg-[#F8F5ED] relative">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">

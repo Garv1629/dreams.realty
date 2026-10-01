@@ -28,7 +28,7 @@ export default function HeroModern() {
   };
 
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-[#F8F5ED] via-[#F8F5ED] to-[#EBE5D9]/40">
+    <section id="hero-section" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-[#F8F5ED] via-[#F8F5ED] to-[#EBE5D9]/40">
       {/* Background Architectural Grid Pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-30 bg-[radial-gradient(#4F7399_1px,transparent_1px)] [background-size:32px_32px]" />
 

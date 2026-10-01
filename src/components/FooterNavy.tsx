@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FooterNavy() {
   return (
-    <footer className="bg-[#1F3A5F] text-[#F8F5ED] pt-16 pb-12 border-t border-[#4F7399]/30 relative z-20">
+    <footer id="footer-section" className="bg-[#1F3A5F] text-[#F8F5ED] pt-16 pb-12 border-t border-[#4F7399]/30 relative z-20">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-white/10">
           
@@ -23,8 +23,8 @@ export default function FooterNavy() {
             </p>
 
             <div className="bg-white/5 border border-white/10 rounded-[12px] p-3 text-[11px] text-[#A7B8CC] leading-relaxed max-w-sm">
-              <span className="font-bold text-white block mb-0.5">Statutory Compliant Advisory</span>
-              Dreams Realty operates with complete adherence to regulatory guidelines and verified title documentation.
+              <span className="font-bold text-white block mb-0.5">Disclaimer & Privacy</span>
+              Any content mentioned is for informational purposes. Dreams Realty is promoted by Authorised Affiliate Channel Sales Partner.
             </div>
           </div>
 
@@ -101,37 +101,40 @@ export default function FooterNavy() {
             </ul>
           </div>
 
-          {/* Office & Direct Contact (3 Columns) */}
+          {/* Sales & Support (3 Columns) */}
           <div className="lg:col-span-3">
             <h4 className="text-xs uppercase tracking-[0.2em] font-bold text-white mb-4">
-              Bangalore Office
+              Sales & Support
             </h4>
             <div className="space-y-3 text-xs text-[#A7B8CC]">
-              <p className="leading-relaxed">
-                3rd Floor, Above Federal Bank, Ramagondanahalli, Whitefield, Bangalore - 560066
-              </p>
               <div>
-                <span className="block text-white font-semibold">Direct Phone:</span>
-                <a href="tel:+918150041742" className="hover:text-white transition-colors font-medium">
-                  +91 8150041742
+                <span className="block text-white font-semibold">Phone:</span>
+                <div className="flex flex-col gap-1 mt-1">
+                  <a href="tel:+918150041742" className="hover:text-white transition-colors font-medium">
+                    +91 8150041742
+                  </a>
+                  <a href="tel:+918553999922" className="hover:text-white transition-colors font-medium">
+                    +91 8553999922
+                  </a>
+                  <a href="tel:+919663982707" className="hover:text-white transition-colors font-medium">
+                    +91 9663982707
+                  </a>
+                </div>
+              </div>
+              <div className="pt-1">
+                <span className="block text-white font-semibold">Email:</span>
+                <a href="mailto:info@dreamsrealty.co.in" className="hover:text-white transition-colors font-medium">
+                  info@dreamsrealty.co.in
                 </a>
               </div>
-              <div>
-                <span className="block text-white font-semibold">WhatsApp Concierge:</span>
-                <a
-                  href="https://api.whatsapp.com/send?phone=918553999922"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-[#25D366] transition-colors font-medium"
-                >
-                  +91 8553999922
-                </a>
-              </div>
-              <div>
-                <span className="block text-white font-semibold">General Enquiries:</span>
-                <a href="mailto:contact@dreamsrealty.co.in" className="hover:text-white transition-colors font-medium">
-                  contact@dreamsrealty.co.in
-                </a>
+              <div className="pt-2">
+                <span className="block text-white font-semibold mb-2">Follow Us:</span>
+                <div className="flex items-center gap-3">
+                  <a href="https://twitter.com/dreams_realty" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Twitter">Twitter</a>
+                  <a href="https://www.facebook.com/residentialpropertymanagers/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Facebook">Facebook</a>
+                  <a href="https://www.instagram.com/dreamsrealty_whitefield/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="Instagram">Instagram</a>
+                  <a href="https://linkedin.com/company/dreams-realty-pvt-ltd" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors" aria-label="LinkedIn">LinkedIn</a>
+                </div>
               </div>
             </div>
           </div>
