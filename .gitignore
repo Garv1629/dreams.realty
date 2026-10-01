@@ -1,0 +1,48 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+.env
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# logs & temporary test artifacts
+*.log
+*.txt
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+.chrome_profile/
+screenshots/
+check_node.ps1
+run_build.cmd
+py_output.log
+take_screenshots.py
+runner
+check.cmd

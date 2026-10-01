@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 31, 58, 95;
+  --background-rgb: 248, 245, 237;
+  --navy-blue: #1F3A5F;
+  --slate-blue: #4F7399;
+  --dusty-blue: #A7B8CC;
+  --soft-beige: #DCD3C4;
+  --warm-cream: #F8F5ED;
+}
+
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: #F8F5ED;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  color: #1F3A5F;
+  background-color: #F8F5ED;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom architectural scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F5ED;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A7B8CC;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4F7399;
+}
+
+/* Subtle architectural grid overlay */
+.architectural-grid {
+  background-image: linear-gradient(to right, rgba(31, 58, 95, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(31, 58, 95, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.architectural-blueprint {
+  background-image: radial-gradient(rgba(79, 115, 153, 0.15) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Selection aesthetics */
+::selection {
+  background: #A7B8CC;
+  color: #1F3A5F;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
