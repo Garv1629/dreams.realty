@@ -5,8 +5,18 @@ import Navigation from "@/components/Navigation";
 import FooterNavy from "@/components/FooterNavy";
 import AnalyticsProvider from "@/components/AnalyticsProvider";
 
-const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: '--font-playfair' });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: '--font-inter',
+  display: 'swap',
+  fallback: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+});
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: '--font-playfair',
+  display: 'swap',
+  fallback: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+});
 
 export const viewport: Viewport = {
   width: "device-width",

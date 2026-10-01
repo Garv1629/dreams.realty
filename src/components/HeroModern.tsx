@@ -225,7 +225,7 @@ export default function HeroModern() {
                   Title Verified
                 </span>
                 <span className="text-[10px] text-[#4F7399]">
-                  Clear RERA Approvals
+                  100% Legal Verification
                 </span>
               </div>
             </motion.div>

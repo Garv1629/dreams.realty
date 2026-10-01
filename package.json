@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "node serve.js",
     "lint": "next lint",
-    "clean": "node -e \"const fs=require('fs');const p=require('path');function r(d){if(fs.existsSync(d)){fs.readdirSync(d).forEach(f=>{const fp=p.join(d,f);fs.lstatSync(fp).isDirectory()?r(fp):fs.unlinkSync(fp)});fs.rmdirSync(d)}};r('.next');\"",
-    "test": "node test_fetch.js"
+    "clean": "node -e \"const fs=require('fs');const p=require('path');function r(d){if(fs.existsSync(d)){fs.readdirSync(d).forEach(f=>{const fp=p.join(d,f);fs.lstatSync(fp).isDirectory()?r(fp):fs.unlinkSync(fp)});fs.rmdirSync(d)}};r('.next');\""
   },
   "dependencies": {
     "@react-three/drei": "^9.105.4",

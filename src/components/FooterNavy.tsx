@@ -23,8 +23,8 @@ export default function FooterNavy() {
             </p>
 
             <div className="bg-white/5 border border-white/10 rounded-[12px] p-3 text-[11px] text-[#A7B8CC] leading-relaxed max-w-sm">
-              <span className="font-bold text-white block mb-0.5">RERA Compliant Advisory</span>
-              Dreams Realty operates with complete adherence to Karnataka RERA statutory guidelines and verified documentation.
+              <span className="font-bold text-white block mb-0.5">Statutory Compliant Advisory</span>
+              Dreams Realty operates with complete adherence to regulatory guidelines and verified title documentation.
             </div>
           </div>
 

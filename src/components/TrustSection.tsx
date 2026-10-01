@@ -10,8 +10,8 @@ export default function TrustSection() {
       tag: "DUE DILIGENCE",
       title: "Comprehensive & Verified Properties",
       description:
-        "Every single villa, apartment, and plot in our portfolio undergoes thorough physical inspection and complete legal title verification. We ensure transparent RERA clearances, so you invest with complete peace of mind.",
-      perks: ["100% Legal Title Verification", "Physical Site & Amenity Audit", "Approved RERA Sanctions"]
+        "Every single villa, apartment, and plot in our portfolio undergoes thorough physical inspection and complete legal title verification, so you invest with complete peace of mind.",
+      perks: ["100% Legal Title Verification", "Physical Site & Amenity Audit", "Transparent Documentation"]
     },
     {
       number: "02",

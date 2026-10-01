@@ -40,10 +40,16 @@ const config: Config = {
         "blue-dusty": "#A7B8CC",
         "beige-soft": "#DCD3C4",
         "cream-warm": "#F8F5ED",
+        // Backward-compatible mappings into Blue & Cream palette
+        "charcoal-deep": "#1F3A5F",
+        "ivory-warm": "#F8F5ED",
+        "stone-muted": "#4F7399",
+        "brass-elegant": "#1F3A5F",
+        "sage-restrained": "#DCD3C4",
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
-        serif: ['var(--font-playfair)', 'serif'],
+        sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        serif: ['var(--font-playfair)', 'Georgia', 'Cambria', '"Times New Roman"', 'serif'],
       },
       letterSpacing: {
         widest: "0.2em",
