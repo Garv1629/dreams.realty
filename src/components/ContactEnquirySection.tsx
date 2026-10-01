@@ -26,7 +26,8 @@ export default function ContactEnquirySection() {
           setStatus("success");
         } else {
           setStatus("error");
-          setErrorMessage(result.error || "Submission failed. Please reach out via phone or WhatsApp.");
+          const msg = "error" in result && typeof result.error === "string" ? result.error : null;
+          setErrorMessage(msg || "Submission failed. Please reach out via phone or WhatsApp.");
         }
       } catch (err: any) {
         setStatus("error");
