@@ -35,7 +35,10 @@ export async function submitLead(formData: FormData, contextData: any): Promise<
       return { success: false, error: String(result.error) };
     }
 
-    return { success: Boolean(result.success), duplicate: result.duplicate };
+    return {
+      success: Boolean(result.success),
+      duplicate: "duplicate" in result ? Boolean(result.duplicate) : undefined,
+    };
   } catch (err: any) {
     return { success: false, error: err?.message || "Failed to submit enquiry." };
   }
